@@ -12,14 +12,14 @@ var Query = React.createClass({
 
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
-                <h4 className=""><strong>Topic</strong></h4>
+                <h4 className=""><strong>Keyword</strong></h4>
                 <input type="text" className="form-control" id="keyword" />
 
                 <h4 className=""><strong>Start Year</strong></h4>
-                <input type="text" className="form-control" id="search_start" />
+                <input type="text" className="form-control" id="year_start" />
 
                 <h4 className=""><strong>End Year</strong></h4>
-                <input type="text" className="form-control" id="search_end" />
+                <input type="text" className="form-control" id="year_end" />
               </div>
 
               <div className="pull-right">
