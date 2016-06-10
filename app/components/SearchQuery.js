@@ -16,8 +16,8 @@ var SearchQuery = React.createClass({
 
         /*GET FORM VALUES*/
         var topicValue = this.refs.topicInput.value;
-        var yearStartValue = this.refs.yearStartInput.value;
-        var yearEndValue = this.refs.yearEndInput.value;
+        var yearStartValue = this.refs.yearStartInput.value.toString();
+        var yearEndValue = this.refs.yearEndInput.value.toString();
 
         /*CLEAR FORM VALUES*/
         this.refs.topicInput.value = '';
@@ -36,9 +36,9 @@ var SearchQuery = React.createClass({
                     <h4 className=""><strong>Topic</strong></h4>
                     <input type="text" className="form-control " ref="topicInput" />
                     <h4 className=""><strong>Start Year</strong></h4>
-                    <input type="text" className="form-control " ref="yearStartInput" />
+                    <input type="number" className="form-control " ref="yearStartInput" />
                     <h4 className=""><strong>End Year</strong></h4>
-                    <input type="text" className="form-control " ref="yearEndInput" />
+                    <input type="number" className="form-control " ref="yearEndInput" />
                 </div>
                 <div className="pull-right">
                     <button type="submit" className="btn btn-danger"><h4>Submit</h4></button>

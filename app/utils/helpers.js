@@ -9,8 +9,7 @@ var helpers = {
 				'api-key': "1f7c7f95b1c4310e875bb121e74ccb33:15:74629295",
 				'q': topic,
 				'begin_date': yearStart + "0000",
-				'end_date': yearEnd + "0000",
-				'sort': "newest"
+				'end_date': yearEnd + "1231",
 			});
 
 		console.log(url);
